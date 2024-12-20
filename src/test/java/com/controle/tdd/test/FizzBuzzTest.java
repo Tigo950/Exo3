@@ -22,6 +22,11 @@ public class FizzBuzzTest {
     public void testFizzBuzzDe15() {
         assertEquals("FizzBuzz", FizzBuzz.de(15));
     }
-
+    @Test
+    public void testFizzBuzzDeMultiples() {
+        assertEquals("Fizz", FizzBuzz.de(6));  // Divisible par 3
+        assertEquals("Buzz", FizzBuzz.de(10)); // Divisible par 5
+        assertEquals("FizzBuzz", FizzBuzz.de(30)); // Divisible par 3 et 5
+    }
 }
 
