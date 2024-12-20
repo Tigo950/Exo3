@@ -28,5 +28,10 @@ public class FizzBuzzTest {
         assertEquals("Buzz", FizzBuzz.de(10)); // Divisible par 5
         assertEquals("FizzBuzz", FizzBuzz.de(30)); // Divisible par 3 et 5
     }
+    @Test
+    public void testFizzBuzzDeNonDivisible() {
+        assertEquals("2", FizzBuzz.de(2)); // Non divisible par 3 ni 5
+        assertEquals("7", FizzBuzz.de(7)); // Non divisible par 3 ni 5
+    }
 }
 
